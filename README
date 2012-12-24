@@ -13,7 +13,8 @@ router/firewall on the Internet which I couldn't control.
 login_keepalived is run on the server-side of the connection and
 operates by periodically writing an invisible NULL character to the
 remote login terminal(s). The NULL character has no impact on the terminal
-session, but keeps the TCP session alive. 
+session, but keeps the TCP session alive.
+
 login_keepalived has two modes of operation:
 
   1. global-daemon-mode. In this mode login_keepalived periodically
@@ -24,24 +25,13 @@ preferred way of operation. global-daemon-mode must be run by root.
 terminal of the user that started it. If your systems administrator
 doesn't want to run login_keepalived in global-daemon-mode, or
 global-daemon-mode is unwanted for some other reason, this is the mode
-to use. 
+to use.
 
 !!! NOTE !!!
 Please note that it must be started directly from the shell or
 one of the shell startup files (.login, .bash_profile, .bashrc, etc
 depending on your shell), so that the shell is the parent-pid of
 login_keepalived.
-
-	Stability
-
-We've been running login_keepalived in global-daemon-mode on > 15
-busy servers with several hundred ssh/telnet users since spring
-2001. So far there's been no incident reports, no signs of trouble. On
-the contrary many users are very happy that their ssh/telnet sessions
-are being kept alive. It seems I was not the only one having trouble
-with sessions being timed out or interrupted. private-user-mode has
-only been briefly tested but so far shows no signs of instability or
-trouble.
 
 	Platforms
 
@@ -50,7 +40,9 @@ see no reason why it shouldn't work on other *nixes as well, but it
 might very well need a little tweaking. If you get it running on
 something else than GNU/Linux, please send me a note on what/how you
 did it and I'll include your information here. Patches and suggestions
-welcome. See AUTHORS for my e-mail address.
+welcome.
+
+http://github.com/ekenberg/login_keepalived
 
 	Keep Alive,
 	/Johan Ekenberg

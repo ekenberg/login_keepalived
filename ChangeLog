@@ -1,21 +1,28 @@
+
+
+2012-12-24 Johan Ekenberg
+	* Update autoconf/automake
+	* Fix compile warning
+	* Update README, AUTHORS etc
+	* Move to Github
+
 *** Changes between 1.1.0 and 1.2.0 ***
-2004-06-06 Johan Ekenberg <johan@ekenberg.se>
+2004-06-06 Johan Ekenberg
 	* New option: -s <sec> where <sec> = seconds to sleep between keepalive-writes
 	* Switched to using getopt() for parsing commandline arguments
 	* Added config.h
 
 *** Changes between 1.0.0 and 1.1.0 ***
-2004-01-04 Johan Ekenberg <johan@ekenberg.se>
+2004-01-04 Johan Ekenberg
 	* Prepared for public release + homepage etc
 
 *** Version 1.0.0 ***
-2002-02-14 Johan Ekenberg <johan@ekenberg.se>
+2002-02-14 Johan Ekenberg
 	* syslog support in global mode
 	* signal handling
 
-2001-10-04  Johan Ekenberg <johan@ekenberg.se>
+2001-10-04  Johan Ekenberg
 	* autoconf support
 
-2001-06-??  Johan Ekenberg <johan@ekenberg.se>
+2001-06-??  Johan Ekenberg
 	* Initial version
-	

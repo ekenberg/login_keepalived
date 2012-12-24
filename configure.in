@@ -1,5 +1,5 @@
 AC_INIT(src/login_keepalived.c)
 AC_CONFIG_HEADER(src/config.h)
-AM_INIT_AUTOMAKE(login_keepalived, 1.2.0)
+AM_INIT_AUTOMAKE(login_keepalived, 1.2.1)
 AC_PROG_CC
 AC_OUTPUT(Makefile src/Makefile)
