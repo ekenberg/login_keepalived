@@ -1,6 +1,16 @@
 	login_keepalived
 	================
 
+        Usage
+
+login_keepalived [ -p | -g ] [ -s <sec> -d -v ]
+  -p        = private mode (keeps you alive)
+  -g        = global mode  (keeps everybody alive)
+  -s <sec>  = seconds to sleep between each keepalive-write (default = 60)
+  -v        = be verbose when starting (mostly for private mode)
+  -d        = logs debug messages through syslogd (daemon.debug)
+
+
 	Description
 
 login_keepalived is a small daemon that keeps remote terminal logins alive.
