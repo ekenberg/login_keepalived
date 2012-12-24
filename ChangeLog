@@ -1,0 +1,21 @@
+*** Changes between 1.1.0 and 1.2.0 ***
+2004-06-06 Johan Ekenberg <johan@ekenberg.se>
+	* New option: -s <sec> where <sec> = seconds to sleep between keepalive-writes
+	* Switched to using getopt() for parsing commandline arguments
+	* Added config.h
+
+*** Changes between 1.0.0 and 1.1.0 ***
+2004-01-04 Johan Ekenberg <johan@ekenberg.se>
+	* Prepared for public release + homepage etc
+
+*** Version 1.0.0 ***
+2002-02-14 Johan Ekenberg <johan@ekenberg.se>
+	* syslog support in global mode
+	* signal handling
+
+2001-10-04  Johan Ekenberg <johan@ekenberg.se>
+	* autoconf support
+
+2001-06-??  Johan Ekenberg <johan@ekenberg.se>
+	* Initial version
+	
