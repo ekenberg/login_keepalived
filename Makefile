@@ -21,6 +21,7 @@ pkgdatadir = $(datadir)/login_keepalived
 pkglibdir = $(libdir)/login_keepalived
 pkgincludedir = $(includedir)/login_keepalived
 top_builddir = .
+datarootdir = ${prefix}/share
 
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = /usr/bin/install -c
@@ -35,13 +36,13 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-ACLOCAL = ${SHELL} /home/johan/projects/login_keepalived/missing --run aclocal-1.7
+ACLOCAL = ${SHELL} /home/johan/projects/login_keepalived/missing --run aclocal-1.11
 AMDEP_FALSE = #
 AMDEP_TRUE = 
 AMTAR = ${SHELL} /home/johan/projects/login_keepalived/missing --run tar
 AUTOCONF = ${SHELL} /home/johan/projects/login_keepalived/missing --run autoconf
 AUTOHEADER = ${SHELL} /home/johan/projects/login_keepalived/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/johan/projects/login_keepalived/missing --run automake-1.7
+AUTOMAKE = ${SHELL} /home/johan/projects/login_keepalived/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -57,7 +58,7 @@ EXEEXT =
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
-INSTALL_STRIP_PROGRAM = ${SHELL} $(install_sh) -c -s
+INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LDFLAGS = 
 LIBOBJS = 
 LIBS = 
@@ -76,7 +77,7 @@ SHELL = /bin/bash
 STRIP = 
 VERSION = 1.2.0
 ac_ct_CC = gcc
-ac_ct_STRIP = 
+ac_ct_STRIP = @ac_ct_STRIP@
 am__fastdepCC_FALSE = #
 am__fastdepCC_TRUE = 
 am__include = include
@@ -84,16 +85,16 @@ am__leading_dot = .
 am__quote = 
 bindir = ${exec_prefix}/bin
 build_alias = 
-datadir = ${prefix}/share
+datadir = ${datarootdir}
 exec_prefix = ${prefix}
 host_alias = 
 includedir = ${prefix}/include
-infodir = ${prefix}/info
-install_sh = /home/johan/projects/login_keepalived/install-sh
+infodir = ${datarootdir}/info
+install_sh = ${SHELL} /home/johan/projects/login_keepalived/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localstatedir = ${prefix}/var
-mandir = ${prefix}/man
+mandir = ${datarootdir}/man
 oldincludedir = /usr/include
 prefix = /usr/local
 program_transform_name = s,x,x,
@@ -136,7 +137,7 @@ $(top_builddir)/config.status: $(srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 $(srcdir)/configure:  $(srcdir)/configure.in $(ACLOCAL_M4) $(CONFIGURE_DEPENDENCIES)
 	cd $(srcdir) && $(AUTOCONF)
 
-$(ACLOCAL_M4):  configure.in 
+$(ACLOCAL_M4):  configure.in
 	cd $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 uninstall-info-am:
 
