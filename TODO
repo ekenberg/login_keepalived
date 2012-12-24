@@ -1,0 +1,10 @@
+	* <DONE> make sure it works with /dev/pts/? (what more strange ttys are there??)
+ 	* <DONE> getopt
+	* <DONE> logging through syslog
+	* <DONE> -d = debug mode
+	* Write PID file, prevent multiple instances as Global Daemon
+	* use ~/.no_login_keepalive[d] in homedir to prevent being "kept alive"
+	* man-page
+	* <?> option to choose NOOP character (or is this idea too bad?)
+	* <DONE> option to choose delay between NOOP writes to terminal
+
