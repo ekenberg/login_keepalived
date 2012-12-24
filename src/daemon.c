@@ -14,7 +14,7 @@ void debug_log(const char *format, ...) {
    va_start(ap, format);
    if (options.debug) {
       vsnprintf(message, 1023, format, ap);
-      syslog(LOG_DEBUG, message);
+      syslog(LOG_DEBUG, "%s", message);
    }
 }
 
